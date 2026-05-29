@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "string-helpers",
+  "homepage": "https://github.com/shadcn/throwaway-00",
+  "items": [
+    {
+      "name": "capitalize",
+      "type": "registry:lib",
+      "title": "Capitalize",
+      "description": "Capitalizes the first letter of a string.",
+      "files": [
+        {
+          "path": "capitalize.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "truncate",
+      "type": "registry:lib",
+      "title": "Truncate",
+      "description": "Truncates a string to a max length.",
+      "files": [
+        {
+          "path": "truncate.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "slugify",
+      "type": "registry:lib",
+      "title": "Slugify",
+      "description": "Converts a string into a url-friendly slug.",
+      "files": [
+        {
+          "path": "slugify.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
