@@ -1,0 +1,44 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "throwaway-00",
+  "homepage": "https://github.com/shadcn/throwaway-00",
+  "items": [
+    {
+      "name": "hello-button",
+      "type": "registry:component",
+      "title": "Hello Button",
+      "description": "A button that greets the user on click.",
+      "files": [
+        {
+          "path": "hello-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "greet",
+      "type": "registry:lib",
+      "title": "Greet",
+      "description": "A utility that builds a greeting string.",
+      "files": [
+        {
+          "path": "greet.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "greet-script",
+      "type": "registry:file",
+      "title": "Greet Script",
+      "description": "A bash script that prints a greeting.",
+      "files": [
+        {
+          "path": "greet.sh",
+          "type": "registry:file",
+          "target": "scripts/greet.sh"
+        }
+      ]
+    }
+  ]
+}
