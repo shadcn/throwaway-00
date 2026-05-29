@@ -4,6 +4,18 @@
   "homepage": "https://github.com/shadcn/throwaway-00",
   "items": [
     {
+      "name": "format-name",
+      "type": "registry:lib",
+      "title": "Format Name",
+      "description": "A utility that capitalizes a name.",
+      "files": [
+        {
+          "path": "format-name.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
       "name": "hello-button",
       "type": "registry:component",
       "title": "Hello Button",
@@ -20,10 +32,40 @@
       "type": "registry:lib",
       "title": "Greet",
       "description": "A utility that builds a greeting string.",
+      "registryDependencies": ["shadcn/throwaway-00/format-name"],
       "files": [
         {
           "path": "greet.ts",
           "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "greeting-card",
+      "type": "registry:component",
+      "title": "Greeting Card",
+      "description": "A card that displays a greeting and a hello button.",
+      "registryDependencies": [
+        "shadcn/throwaway-00/greet",
+        "shadcn/throwaway-00/hello-button"
+      ],
+      "files": [
+        {
+          "path": "greeting-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "welcome-screen",
+      "type": "registry:component",
+      "title": "Welcome Screen",
+      "description": "A full-screen welcome view wrapping the greeting card.",
+      "registryDependencies": ["shadcn/throwaway-00/greeting-card"],
+      "files": [
+        {
+          "path": "welcome-screen.tsx",
+          "type": "registry:component"
         }
       ]
     },
